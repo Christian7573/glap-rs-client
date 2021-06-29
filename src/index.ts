@@ -204,14 +204,14 @@ new Promise(async (resolve, reject) => {
     global.spritesheet.parse(resolve);
 }).then(() => load_fonts()).then(async () => {
 	if (!("localStorage" in window)) throw new Error("No localstorage");
-	global.gui = gui_load([
+	/*global.gui = gui_load([
 		{ 
 			kind: "fuel_gague",
 			clamp: Clamp.Right,
 			is_vertical: true,
 			offset: 200,
 		}
-	], 1);
+	], 1);*/
 }).then(() => {
     global.main_hud = new MainHud();
     pixi.stage.addChild(global.main_hud.container);
@@ -236,7 +236,7 @@ new Promise(async (resolve, reject) => {
     global.heading_hologram.alpha = 0.5;
     global.holograms.addChild(global.heading_hologram);
 
-	pixi.stage.addChild(global.gui.container);
+	//pixi.stage.addChild(global.gui.container);
 
     resize();
     window.addEventListener("resize", resize);
@@ -449,7 +449,7 @@ new Promise(async (resolve, reject) => {
 		}
         else if (msg instanceof ToClientMsg.PostSimulationTick) {
             global.main_hud.set_fuel(msg.your_power, max_fuel);
-			if (global.gui.fuel_gague != null) global.gui.fuel_gague.update(msg.your_power, max_fuel);
+			//if (global.gui.fuel_gague != null) global.gui.fuel_gague.update(msg.your_power, max_fuel);
 
             const now = performance.now();
             const delta_server_tick = now - previous_server_tick;
