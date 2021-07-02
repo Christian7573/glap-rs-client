@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="279mm"
+   height="123.68018mm"
+   viewBox="0 0 278.99999 123.68018"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2-dev (2bad7a816c, 2021-06-14, custom)"
+   sodipodi:docname="dock_button.svg"
+   inkscape:export-filename="/home/christian7573/Documents/glap/glap-rs-client/assets/dock_button.png"
+   inkscape:export-xdpi="62.110001"
+   inkscape:export-ydpi="62.110001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     units="px"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.84939908"
+     inkscape:cx="147.75151"
+     inkscape:cy="85.943112"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1787"
+     inkscape:window-height="932"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(26.533766,-37.685001)">
+    <rect
+       style="display:none;fill:#ff2a2a;fill-opacity:0.862903;stroke:none;stroke-width:0.425986;stop-color:#000000"
+       id="rect904"
+       width="279"
+       height="123.68018"
+       x="-26.533766"
+       y="37.685001" />
+    <image
+       xlink:href="../dist/starfield.jpg"
+       y="77.876205"
+       x="27.591225"
+       width="135.46666"
+       height="135.46666"
+       preserveAspectRatio="none"
+       id="image870"
+       style="display:none" />
+    <rect
+       y="16.67659"
+       x="-25.160456"
+       height="143.31226"
+       width="289.25369"
+       id="rect906"
+       style="display:inline;fill:#87de87;fill-opacity:1;stroke:#87de87;stroke-width:2.7463;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       ry="23.451046" />
+    <g
+       transform="translate(-57.011437,0.85091698)"
+       id="g878">
+      <path
+         d="M 75.221001,110.50006 A 43.845233,17.041745 0 0 0 48.229369,126.2327 43.845233,17.041745 0 0 0 92.074753,143.27423 43.845233,17.041745 0 0 0 135.91962,126.2327 43.845233,17.041745 0 0 0 108.9285,110.50044 39.582103,15.30209 0 0 1 131.65683,124.34584 39.582103,15.30209 0 0 1 92.074753,139.64781 39.582103,15.30209 0 0 1 52.492674,124.34584 39.582103,15.30209 0 0 1 75.221001,110.50006 Z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.225627;stop-color:#000000"
+         id="path833" />
+      <path
+         style="fill:#ffffff;stroke-width:0.999994"
+         d="m 81.520368,133.58216 c -0.38003,-5.2043 -3.497421,-9.87689 -7.778617,-12.72561 -6.362963,-5.3792 -11.236932,-13.41816 -10.585866,-21.986875 -1.510161,0.152492 -5.896777,2.825045 -4.051802,-0.1946 2.386156,-5.475114 6.323,-10.323067 11.314141,-13.624761 -0.511315,5.23479 0.51977,10.523103 2.289977,15.438796 -2.200046,-0.834345 -5.571483,-2.734134 -3.604483,1.11627 1.383943,3.8953 3.87577,8.80238 8.597533,8.90814 5.267345,-0.0219 7.893527,-5.51834 9.544848,-9.72938 3.113259,-8.49569 6.192446,-17.03062 9.12994,-25.573934 -3.992898,-1.397173 -7.997098,-2.762859 -11.980387,-4.186868 -0.01507,-2.329821 -3.957225,-8.903195 0.792591,-6.184089 4.514721,1.452363 9.028833,2.906751 13.545532,4.353071 1.151541,-2.860747 2.776715,-5.509709 -0.07569,-7.850677 -2.583172,-5.120552 1.507245,-11.880472 7.245585,-11.959012 5.77274,-0.559029 10.56506,5.845301 8.44286,11.213072 -0.48217,4.854324 -7.02681,3.923293 -7.77895,7.815154 -3.15362,4.583908 3.564,4.095336 6.32377,5.588844 2.92271,0.95724 5.84521,1.91498 8.7679,2.872148 -1.94754,1.566106 -3.89514,3.132197 -5.84273,4.69829 -3.92069,-1.264856 -7.8198,-2.600395 -11.75858,-3.806085 -3.08667,10.406051 -6.473652,20.735409 -9.357355,31.193746 -0.863349,3.59145 0.592266,8.07155 4.516081,9.03889 4.626854,1.60892 9.740754,-0.60215 12.855494,-4.06467 -1.70896,-1.17942 -6.36819,-2.4034 -1.99468,-3.29804 4.08033,-2.13085 7.31793,-5.55862 10.09155,-9.17145 2.51271,5.8395 2.01644,12.83558 -1.16303,18.3208 -1.96886,-2.69993 -3.39291,-3.34865 -4.60615,0.0491 -4.72016,6.75263 -13.54951,8.97884 -21.387324,8.44361 -4.314401,0.4237 -8.363013,2.5342 -11.470131,5.51208 l -0.02203,-0.20606 z M 105.53569,62.259114 c 3.88514,0.965371 7.04383,-4.176382 4.39843,-7.199769 -2.34117,-3.378355 -8.2183,-1.356553 -8.04933,2.712274 -0.0607,2.12565 1.55753,4.115179 3.6509,4.487495 z"
+         id="path530" />
+    </g>
+    <text
+       id="text280"
+       y="99.030144"
+       x="169.03484"
+       style="font-style:normal;font-weight:normal;font-size:40.283px;line-height:1.05;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00708"
+       xml:space="preserve"
+       transform="scale(0.89598669,1.116088)"><tspan
+         id="tspan278"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.00708"
+         y="99.030144"
+         x="169.03484"
+         sodipodi:role="line">Dock</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke-width:0.34957;stop-color:#000000"
+       id="rect635"
+       width="7.475873"
+       height="47.347198"
+       x="23.751307"
+       y="24.474663"
+       ry="5"
+       rx="5"
+       inkscape:transform-center-x="9.7819567"
+       inkscape:transform-center-y="-21.638984"
+       transform="rotate(-19.811477)" />
+  </g>
+</svg>
