@@ -109,9 +109,17 @@
 			"spriteSourceSize": {"x":0,"y":0,"w":682,"h":302},
 			"sourceSize": {"w":682,"h":302}
 		},
+		"dock_button.png":
+		{
+			"frame": {"x":4443,"y":308,"w":682,"h":302},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":682,"h":302},
+			"sourceSize": {"w":682,"h":302}
+		},
 		"static.png":
 		{
-			"frame": {"x":4443,"y":308,"w":615,"h":345},
+			"frame": {"x":4443,"y":614,"w":615,"h":345},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":615,"h":345},
@@ -119,7 +127,7 @@
 		},
 		"destination_hologram.png":
 		{
-			"frame": {"x":4443,"y":657,"w":604,"h":50},
+			"frame": {"x":4443,"y":963,"w":604,"h":50},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":604,"h":50},
@@ -127,7 +135,7 @@
 		},
 		"heading_hologram.png":
 		{
-			"frame": {"x":4443,"y":711,"w":300,"h":382},
+			"frame": {"x":4443,"y":1017,"w":300,"h":382},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":300,"h":382},
@@ -135,7 +143,7 @@
 		},
 		"starguide_close_icon.png":
 		{
-			"frame": {"x":4747,"y":711,"w":208,"h":150},
+			"frame": {"x":4747,"y":1017,"w":208,"h":150},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":208,"h":150},
@@ -143,7 +151,7 @@
 		},
 		"starguide_icon.png":
 		{
-			"frame": {"x":4747,"y":865,"w":208,"h":150},
+			"frame": {"x":4747,"y":1171,"w":208,"h":150},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":208,"h":150},
@@ -151,7 +159,7 @@
 		},
 		"cargo_off.png":
 		{
-			"frame": {"x":4443,"y":1097,"w":200,"h":200},
+			"frame": {"x":4443,"y":1403,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -159,7 +167,7 @@
 		},
 		"cargo.png":
 		{
-			"frame": {"x":4647,"y":1097,"w":200,"h":200},
+			"frame": {"x":4647,"y":1403,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -167,7 +175,7 @@
 		},
 		"core.png":
 		{
-			"frame": {"x":4851,"y":1097,"w":200,"h":200},
+			"frame": {"x":4851,"y":1403,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -175,7 +183,7 @@
 		},
 		"eco_thruster_off.png":
 		{
-			"frame": {"x":4443,"y":1301,"w":200,"h":200},
+			"frame": {"x":4443,"y":1607,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -183,7 +191,7 @@
 		},
 		"eco_thruster.png":
 		{
-			"frame": {"x":4647,"y":1301,"w":200,"h":200},
+			"frame": {"x":4647,"y":1607,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -191,7 +199,7 @@
 		},
 		"hub_off.png":
 		{
-			"frame": {"x":4851,"y":1301,"w":200,"h":200},
+			"frame": {"x":4851,"y":1607,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -199,7 +207,7 @@
 		},
 		"hub.png":
 		{
-			"frame": {"x":4443,"y":1505,"w":200,"h":200},
+			"frame": {"x":4443,"y":1811,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -207,7 +215,7 @@
 		},
 		"hub_thruster_off.png":
 		{
-			"frame": {"x":4647,"y":1505,"w":200,"h":200},
+			"frame": {"x":4647,"y":1811,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -215,7 +223,7 @@
 		},
 		"hub_thruster.png":
 		{
-			"frame": {"x":4851,"y":1505,"w":200,"h":200},
+			"frame": {"x":4851,"y":1811,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -223,7 +231,7 @@
 		},
 		"landing_thruster_off.png":
 		{
-			"frame": {"x":4443,"y":1709,"w":200,"h":200},
+			"frame": {"x":4443,"y":2015,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -231,7 +239,7 @@
 		},
 		"landing_thruster.png":
 		{
-			"frame": {"x":4647,"y":1709,"w":200,"h":200},
+			"frame": {"x":4647,"y":2015,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -239,7 +247,7 @@
 		},
 		"power_hub_off.png":
 		{
-			"frame": {"x":4851,"y":1709,"w":200,"h":200},
+			"frame": {"x":4851,"y":2015,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -247,7 +255,7 @@
 		},
 		"power_hub.png":
 		{
-			"frame": {"x":4443,"y":1913,"w":200,"h":200},
+			"frame": {"x":4443,"y":2219,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -255,7 +263,7 @@
 		},
 		"solar_panel_off.png":
 		{
-			"frame": {"x":4647,"y":1913,"w":200,"h":200},
+			"frame": {"x":4647,"y":2219,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -263,7 +271,7 @@
 		},
 		"solar_panel.png":
 		{
-			"frame": {"x":4851,"y":1913,"w":200,"h":200},
+			"frame": {"x":4851,"y":2219,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -271,7 +279,7 @@
 		},
 		"super_thruster_off.png":
 		{
-			"frame": {"x":4443,"y":2117,"w":200,"h":200},
+			"frame": {"x":4443,"y":2423,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -279,7 +287,7 @@
 		},
 		"super_thruster.png":
 		{
-			"frame": {"x":4647,"y":2117,"w":200,"h":200},
+			"frame": {"x":4647,"y":2423,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -287,7 +295,7 @@
 		},
 		"thruster_off.png":
 		{
-			"frame": {"x":4851,"y":2117,"w":200,"h":200},
+			"frame": {"x":4851,"y":2423,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -295,7 +303,7 @@
 		},
 		"thruster.png":
 		{
-			"frame": {"x":4443,"y":2321,"w":200,"h":200},
+			"frame": {"x":4443,"y":2627,"w":200,"h":200},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
@@ -303,7 +311,7 @@
 		},
 		"symbol_sun.png":
 		{
-			"frame": {"x":4647,"y":2321,"w":200,"h":167},
+			"frame": {"x":4647,"y":2627,"w":200,"h":167},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":167},
@@ -311,7 +319,7 @@
 		},
 		"symbol_pluto.png":
 		{
-			"frame": {"x":4443,"y":2525,"w":148,"h":187},
+			"frame": {"x":4443,"y":2831,"w":148,"h":187},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":148,"h":187},
@@ -319,7 +327,7 @@
 		},
 		"symbol_neptune.png":
 		{
-			"frame": {"x":4595,"y":2525,"w":130,"h":187},
+			"frame": {"x":4595,"y":2831,"w":130,"h":187},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":187},
@@ -327,7 +335,7 @@
 		},
 		"symbol_saturn.png":
 		{
-			"frame": {"x":4729,"y":2525,"w":130,"h":187},
+			"frame": {"x":4729,"y":2831,"w":130,"h":187},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":187},
@@ -335,7 +343,7 @@
 		},
 		"symbol_uranus.png":
 		{
-			"frame": {"x":4863,"y":2525,"w":130,"h":187},
+			"frame": {"x":4863,"y":2831,"w":130,"h":187},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":187},
@@ -343,7 +351,7 @@
 		},
 		"symbol_earth.png":
 		{
-			"frame": {"x":4851,"y":2321,"w":155,"h":167},
+			"frame": {"x":4851,"y":2627,"w":155,"h":167},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":155,"h":167},
@@ -351,7 +359,7 @@
 		},
 		"symbol_jupiter.png":
 		{
-			"frame": {"x":4443,"y":2716,"w":155,"h":167},
+			"frame": {"x":4443,"y":3022,"w":155,"h":167},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":155,"h":167},
@@ -359,7 +367,7 @@
 		},
 		"symbol_mars.png":
 		{
-			"frame": {"x":4602,"y":2716,"w":155,"h":167},
+			"frame": {"x":4602,"y":3022,"w":155,"h":167},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":155,"h":167},
@@ -367,7 +375,7 @@
 		},
 		"symbol_moon.png":
 		{
-			"frame": {"x":4761,"y":2716,"w":155,"h":167},
+			"frame": {"x":4761,"y":3022,"w":155,"h":167},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":155,"h":167},
@@ -375,7 +383,7 @@
 		},
 		"symbol_mercury.png":
 		{
-			"frame": {"x":4920,"y":2716,"w":133,"h":167},
+			"frame": {"x":4920,"y":3022,"w":133,"h":167},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":167},
@@ -383,7 +391,7 @@
 		},
 		"symbol_venus.png":
 		{
-			"frame": {"x":4443,"y":2887,"w":133,"h":167},
+			"frame": {"x":4443,"y":3193,"w":133,"h":167},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":167},
@@ -391,7 +399,7 @@
 		},
 		"starguide_core.png":
 		{
-			"frame": {"x":4959,"y":711,"w":156,"h":148},
+			"frame": {"x":4959,"y":1017,"w":156,"h":148},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":156,"h":148},
@@ -399,7 +407,7 @@
 		},
 		"starguide_heading_hologram.png":
 		{
-			"frame": {"x":4959,"y":865,"w":100,"h":127},
+			"frame": {"x":4959,"y":1171,"w":100,"h":127},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":127},
@@ -407,7 +415,7 @@
 		},
 		"connector.png":
 		{
-			"frame": {"x":4747,"y":1019,"w":100,"h":45},
+			"frame": {"x":4747,"y":1325,"w":100,"h":45},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":45},
@@ -415,7 +423,7 @@
 		},
 		"starguide_destination_hologram.png":
 		{
-			"frame": {"x":5051,"y":657,"w":67,"h":35},
+			"frame": {"x":5051,"y":963,"w":67,"h":35},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":35},

@@ -1,6 +1,6 @@
 import * as PIXI from 'pixi.js';
 import * as Particles from 'pixi-particles';
-import { ToClientMsg, ToServerMsg, Box, PartKind, PlanetKind } from "./codec";
+import { ToClientMsg, ToServerMsg, Box, PartKind, PlanetKind, BeamoutKind } from "./codec";
 import { Starguide, MainHud, BeamOutButton, StarguideButton, create_planet_icon_mask } from './gui';
 import { PartMeta, CompactThrustMode } from "./parts";
 import { parse as qs_parse } from "query-string";
@@ -37,6 +37,7 @@ export interface GlobalData {
     starguide: Starguide;
     chat: Chat;
 	beamout_button: BeamOutButton;
+	dock_button: BeamOutButton;
     starguide_button: StarguideButton;
     screen_to_player_space: (x: number, y: number) => [number, number];
     holographic_grab: PIXI.Texture;
@@ -81,6 +82,7 @@ export const global: GlobalData = {
     starguide: null,
     chat: null,
 	beamout_button: null,
+	dock_button: null,
     starguide_button: null,
     rendering: true,
     spritesheet: null,
@@ -172,6 +174,8 @@ function resize() {
     global.starguide.update_sprites(main_hud_width, window.innerHeight - main_hud_height - 20, (window.innerWidth - main_hud_width) * 0.5, 10);
 	global.beamout_button.container.position.set(window.innerWidth, 0);
 	global.beamout_button.container.scale.set(global.starguide_button.container.scale.y);
+	global.dock_button.container.position.set(window.innerWidth, 0);
+	global.dock_button.container.scale.set(global.starguide_button.container.scale.y);
 
     global.heading_hologram.height = window.innerHeight * 0.75 / global.scaling.scale.y;
     global.heading_hologram.width = global.heading_hologram.height / global.heading_hologram.texture.height * global.heading_hologram.texture.width
@@ -217,8 +221,10 @@ new Promise(async (resolve, reject) => {
     pixi.stage.addChild(global.main_hud.container);
     global.starguide_button = new StarguideButton();
     pixi.stage.addChild(global.starguide_button.container);
-	global.beamout_button = new BeamOutButton();
+	global.beamout_button = new BeamOutButton(BeamoutKind.Beamout);
+	global.dock_button = new BeamOutButton(BeamoutKind.Dock);
 	pixi.stage.addChild(global.beamout_button.container);
+	pixi.stage.addChild(global.dock_button.container);
     global.starguide = new Starguide();
     global.chat = new Chat();
     pixi.stage.addChild(global.starguide.container);
@@ -380,7 +386,8 @@ new Promise(async (resolve, reject) => {
         }
         else if (msg instanceof ToClientMsg.UpdateMyMeta) {
             max_fuel = msg.max_power;
-			global.beamout_button.set_can_beamout(msg.can_beamout && global.can_beamout);
+			global.beamout_button.set_can_beamout(msg.beamout === BeamoutKind.Beamout && global.can_beamout);
+			global.dock_button.set_can_beamout(msg.beamout === BeamoutKind.Dock && global.can_beamout);
         }
 		else if (msg instanceof ToClientMsg.UpdatePlayerVelocity) {
 			const meta = global.players.get(msg.id);

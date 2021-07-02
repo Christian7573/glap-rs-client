@@ -87,6 +87,14 @@ function enum_PlanetKind_serialize(buf: number[], val: PlanetKind) { buf.push(va
 	if (me < 12) return me as PlanetKind;
 	else throw new Error('Bad PlanetKind deserialize');
 }
+export enum BeamoutKind {
+	Beamout, Dock, None
+}
+function enum_BeamoutKind_serialize(buf: number[], val: BeamoutKind) { buf.push(val as number); }function enum_BeamoutKind_deserialize(buf: Uint8Array, index: Box<number>): BeamoutKind {
+	const me = buf[index.v++];
+	if (me < 3) return me as BeamoutKind;
+	else throw new Error('Bad BeamoutKind deserialize');
+}
 
 class ToServerMsg_Handshake {
 	static readonly id = 0;
@@ -443,14 +451,14 @@ class ToClientMsg_PostSimulationTick {
 }
 class ToClientMsg_UpdateMyMeta {
 	static readonly id = 15;
-	max_power: number; can_beamout: boolean;
-	constructor(max_power: number, can_beamout: boolean,) {
-		this.max_power = max_power; this.can_beamout = can_beamout;
+	max_power: number; beamout: BeamoutKind;
+	constructor(max_power: number, beamout: BeamoutKind,) {
+		this.max_power = max_power; this.beamout = beamout;
 	}
 	serialize(): Uint8Array
 		{let out = [15];
 		type_uint_serialize(out, this.max_power);
-		type_boolean_serialize(out, this.can_beamout);
+		enum_BeamoutKind_serialize(out, this.beamout);
 		return new Uint8Array(out);
 	}
 }
@@ -580,10 +588,10 @@ function deserialize_ToClientMsg(buf: Uint8Array, index: Box<number>) {
 			your_power = type_uint_deserialize(buf, index);
 			return new ToClientMsg_PostSimulationTick(your_power);
 		}; break;		case 15: {
-			let max_power: number; let can_beamout: boolean;
+			let max_power: number; let beamout: BeamoutKind;
 			max_power = type_uint_deserialize(buf, index);
-			can_beamout = type_boolean_deserialize(buf, index);
-			return new ToClientMsg_UpdateMyMeta(max_power, can_beamout);
+			beamout = enum_BeamoutKind_deserialize(buf, index);
+			return new ToClientMsg_UpdateMyMeta(max_power, beamout);
 		}; break;		case 16: {
 			let player_id: number;
 			player_id = type_ushort_deserialize(buf, index);

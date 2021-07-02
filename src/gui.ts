@@ -1,5 +1,5 @@
 import { global } from "./index";
-import { ToServerMsg, PlanetKind } from "./codec";
+import { ToServerMsg, PlanetKind, BeamoutKind } from "./codec";
 import * as PIXI from 'pixi.js';
 import { Planet } from "./planets";
 
@@ -480,8 +480,14 @@ export function rotate_vector(x: number, y: number, theta_sin: number, theta_cos
 
 export class BeamOutButton {
 	container = new PIXI.Container();
-	sprite = new PIXI.Sprite(global.spritesheet.textures["beamout_button.png"]);
-	constructor() {
+	sprite: PIXI.Sprite;
+	constructor(beamout_kind: BeamoutKind) {
+		let sprite_name;
+		if (beamout_kind === BeamoutKind.Beamout) sprite_name = "beamout_button.png";
+		else if (beamout_kind === BeamoutKind.Dock) sprite_name = "dock_button.png";
+		else throw new Error("Invalid beamout kind");
+
+		this.sprite = new PIXI.Sprite(global.spritesheet.textures[sprite_name]);
 		this.sprite.width = 2; this.sprite.height = 1;
 		this.sprite.anchor.set(1,0);
 		this.sprite.position.y = -1;
@@ -530,7 +536,7 @@ export class BeamOutButton {
 
 	has_beamed_out = false;
 	commit_beamout() {
-		if (!this.can_beamout || this.has_beamed_out) return;
+		if (!this.can_beamout/*|| this.has_beamed_out*/) return;
 		this.has_beamed_out = true;
 		global.socket.send((new ToServerMsg.BeamOut()).serialize());
 	}
