@@ -89,6 +89,7 @@ export interface SaveDataProvider {
 	get_slot_layout(slot: string): Promise<SaveDataProviderRecursivePartDescription>;
 	set_slot_layout(slot: string, layout: SaveDataProviderRecursivePartDescription): Promise<void>;
 	get_inventory(): Promise<{ [key: number]: number }>;
+	get_beamout_kind(): Promise<"beamout" | "dock" | null>;
 }
 export interface SaveDataSlot {
 	id: string;
@@ -588,24 +589,39 @@ save_data_provider.then(async (save_data_provider: SaveDataProvider) => {
 	}
 });
 
-async function on_save_updated(save_to_current: boolean) {
+async function on_save_updated(save_to_current: boolean): Promise<boolean> {
 	if (is_save_loading || (save_selection.selectedIndex === 0 && !save_to_current)) return;
+
+	if (save_to_current && await global.save_data_provider.get_beamout_kind() === "dock") {
+		for (const part_count of global.local_inventory.values()) {
+			if (part_count.v > 0) {
+				if (confirm("You have not loaded all parts onto your ship. When you beamin, extra parts will be destroyed. Do you want to proceed?")) break;
+				else return false;
+			}
+		}
+		if (global.all_roots.length > 1 && !confirm("You have not attached all segments to your ship. When you beamin, dangling parts will be destroyed. Do you want to proceed?")) return;
+	}
+
 	is_save_loading = true;
 	toggle_interface_enabled(false);
 	msg_spot.innerText = "Saving...";
 	msg_spot.classList.remove("error");
+	let success;
 	try {
 		if (save_to_current) await global.save_data_provider.set_current_layout(global.layout.deflate());
 		else await global.save_data_provider.set_slot_layout(save_selection.value, global.layout.deflate());
 		msg_spot.innerText = "Saved!";
+		success = true;
 	} catch (e) {
 		console.error(e);
 		msg_spot.innerText = "Failed to save layout";
 		msg_spot.classList.add("error");
+		success = false;
 	}
 	save_selection.selectedIndex = 0;
 	toggle_interface_enabled(true);
 	is_save_loading = false;
+	return success;
 }
 save_selection.addEventListener("change", on_save_updated.bind(null, false));
 save_button.addEventListener("click", on_save_updated.bind(null, true));
@@ -657,7 +673,7 @@ function clear_completly() {
 clear_button.addEventListener("click", clear_completly);
 
 async function commit_launch() {
-	await on_save_updated(true);
+	if (!(await on_save_updated(true))) return;
 	if (!msg_spot.classList.contains("error")) window.location = "/?commit_launch" as any;
 }
 launch_button.addEventListener("click", commit_launch);
