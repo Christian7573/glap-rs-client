@@ -187,6 +187,7 @@ const inventoried_parts = [
 	PartKind.LandingThruster,
 	PartKind.SuperThruster,
 	PartKind.EcoThruster,
+	PartKind.Cargo,
 ];
 
 let inventory_y = 1.25;
